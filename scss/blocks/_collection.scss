@@ -1,0 +1,120 @@
+.collection{
+    margin-top: 160px;
+    position: relative;
+}
+.collection__list{
+    @include list;
+    display: flex;
+}
+.collection__list::before{
+    position: absolute;
+    content: '';
+    width: 973px;
+    height: 0x;
+    left: -170px;
+    top: 35px;
+
+border: 9px solid #E5ECF4;
+}
+.collection__list-item{
+    margin-right: 30px;
+    position: relative;
+    z-index: 3;
+}
+.collection__list-item:nth-child(3){
+    margin-right: 0;
+}
+.collection__list-item--locate::before{
+    content: '';
+    background: url(/img/telefon.svg) no-repeat center;
+    display: block;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-color: #FCB72B;   
+}
+.collection__list-item--scooter::before{
+    content: '';
+    background: url(/img/001-scooter.svg) no-repeat center;
+    display: block;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-color: #FCB72B;   
+}
+.collection__list-item--enjoy::before{
+    content: '';
+    background: url(/img/Combined-Shape.svg) no-repeat center;
+    display: block;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-color: #FCB72B;   
+}
+
+.collection__list-title{
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #495567;
+}
+
+.collection__list-wrapper{
+    max-width: 350px;
+}
+
+@media only screen and (max-width:1136px) {
+    .collection{
+        margin-top: 122px;
+    }
+
+    .collection__list{
+        flex-direction: column;
+    }
+    .collection__list::before{
+        width: 0;
+        height: 572px;
+        left: 137px;
+        top: -122px;
+    }
+    .collection__list-item{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    .collection__list-item:nth-child(3){
+        margin-right: auto;
+    }
+    .collection__list-wrapper{
+        margin-left: 79px;
+        max-width: 398px;
+        
+    }
+    .collection__list-title{
+        margin: 40px 0 24px 0;
+    }
+    .collection__list-description{
+        margin: 0;
+    }
+}
+@media only screen and (max-width:769px) {
+    .collection{
+        margin-top: 120px;
+    }
+    .collection__list::before{
+       display: none;
+    }
+    .collection__list-item{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 48px;
+    }
+    .collection__list-item:nth-child(1){
+        margin-top: 0;
+    }
+    .collection__list-wrapper{
+        max-width: 311px;
+        margin: 0 auto;
+    }
+}

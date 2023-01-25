@@ -1,0 +1,35 @@
+.site-footer{
+    background: #333A44;
+    padding: 35px 0 35px 0;
+}
+.site-footer__wrapper{
+    display: flex;
+    align-items: center;
+}
+.site-footer__item{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+
+}
+.site-footer-image{
+    margin: 0 24px;
+}
+@media only screen and (max-width:1136px) {
+
+}
+@media only screen and (max-width:796px) {
+    .site-footer{
+        padding: 64px 0 88px 0;
+    }
+    .site-footer__wrapper{
+        flex-direction: column;
+    }
+    .site-footer__list{
+        flex-direction: column;
+    }
+    .site-footer__item{
+        margin: 0;
+        margin-top: 87px;
+    }
+}

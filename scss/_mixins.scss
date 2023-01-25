@@ -1,0 +1,31 @@
+@mixin yellow{
+  background: #FCB72B;
+
+}
+@mixin list {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+@mixin link {
+   text-decoration: none;
+   color: #FFFFFF;
+   font-family: 'Space Mono';
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 25px;
+   background: $color;
+   padding: 14px 39px;
+   display: block;
+}
+@mixin link2 {
+   text-decoration: none;
+   color: #FFFFFF;
+   font-family: 'Space Mono';
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 25px;
+   background: $color;
+   padding: 14px 44px;
+   
+}
